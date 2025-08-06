@@ -1,1 +1,80 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skills ul,
+.projects ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.skills li,
+.projects li {
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.skills li::before,
+.projects li::before {
+  content: "•";
+  color: #004aad;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
